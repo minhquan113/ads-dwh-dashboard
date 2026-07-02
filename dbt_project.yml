@@ -1,0 +1,16 @@
+name: 'ads_dwh'
+version: '1.0.0'
+config-version: 2
+
+profile: 'ads_dwh'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  ads_dwh:
+    staging:
+      +materialized: view

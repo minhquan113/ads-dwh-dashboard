@@ -1,0 +1,13 @@
+sources:
+  - name: a_dwh_ads
+    database: hv-data
+    schema: a_dwh_ads
+    tables:
+      - name: FactAdPerformance
+        description: >
+          Unified fact table built via BigQuery SQL (union of 8 platform-level 
+          queries, external to this dbt project): Meta Ads, Amazon (Sponsored 
+          Products/Brands/Display), TikTok (Standard + GMV Max Live/Product), 
+          Shopee, Google Ads (Video + Asset). Grain: start_date | account_id | 
+          campaign_id | adset_id | ad_id | asset_id | platform. Source query 
+          maintained separately outside dbt (BigQuery scheduled query).
