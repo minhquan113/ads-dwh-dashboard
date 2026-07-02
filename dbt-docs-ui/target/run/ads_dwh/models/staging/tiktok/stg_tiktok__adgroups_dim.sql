@@ -1,0 +1,16 @@
+
+
+  create or replace view `hv-data`.`DE_testing`.`stg_tiktok__adgroups_dim`
+  OPTIONS()
+  as select
+    account_id,
+    account_name,
+    campaign_id,
+    campaign_name,
+    adgroup_id,
+    adgroup_name,
+    create_time,
+    modify_time,
+    budget
+from `hv-data`.`tiktok_data_ads_dwh`.`tiktok_ads_adgroups_adgroup`;
+
