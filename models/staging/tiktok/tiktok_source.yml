@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: tiktok_ads_dwh
+    database: hv-data
+    schema: tiktok_ads_dwh
+    tables:
+      - name: tiktok_ads_account_info
+      - name: tiktok_ads_gmv_max_campaign_overview_report
+      - name: tiktok_ads_gmv_max_live_campaign_report
+      - name: tiktok_ads_gmv_max_product_campaign_level_report
+      - name: tiktok_ads_report_daily
+      - name: tiktok_ads_report_daily_ad
+
+  - name: tiktok_data_ads_dwh
+    database: hv-data
+    schema: tiktok_data_ads_dwh
+    tables:
+      - name: None_ad
+      - name: None_campaign
+      - name: tiktok
+      - name: tiktok_ads_account_info
+      - name: tiktok_ads_adgroups
+      - name: tiktok_ads_adgroups_adgroup
+      - name: tiktok_ads_campaigns
+      - name: tiktok_ads_campaigns_campaign
+      - name: tiktok_campaign
+
+  

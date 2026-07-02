@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_ad_performance_outliers
+    description: "Daily spend outliers detected via z-score (threshold > 3) on FactAdPerformance"
+    columns:
+      - name: ad_id
+        description: "Ad with outlier spend"
+      - name: z_score
+        description: "Standard deviations from mean spend"

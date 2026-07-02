@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_tiktok__adgroup_performance
+    description: "Adgroup performance metrics joined with campaign dimension info"
+    columns:
+      - name: adgroup_id
+        description: "Unique identifier for the ad group"
+        tests:
+          - not_null
+          
+
+      - name: campaign_id
+        description: "Campaign ID joined from adgroup dimension table"
+        tests:
+          - not_null
+
+      - name: spend
+        description: "Total spend for the adgroup"
+        tests:
+          - not_null
+
+      - name: account_id
+        tests:
+          - not_null

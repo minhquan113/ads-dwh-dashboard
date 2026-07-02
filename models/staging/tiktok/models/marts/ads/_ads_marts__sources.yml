@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: a_dwh_ads
+    database: hv-data
+    schema: a_dwh_ads
+    tables:
+      - name: FactAdPerformance
+        description: >
+          Unified fact table: Meta, Amazon (SP/SB/SD), TikTok (standard + GMV Max),
+          Shopee, Google (Video/Asset). Grain: start_date | account_id |
+          account_currency | campaign_id | adset_id | ad_id | asset_id | platform.
